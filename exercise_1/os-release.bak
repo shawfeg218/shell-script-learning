@@ -1,0 +1,18 @@
+409631016
+PRETTY_NAME="Kali GNU/Linux Rolling"
+NAME=Kali GNU/Linux
+version_ID=2023.3
+version=2023.3
+version_CODENAME=kali-rolling
+ID=kali
+ID_LIKE=debian
+HOME_URL="https://www.kali.org/"
+"https://bugs.kali.org/"
+ANSI_COLOR="1;31"
+NAME="Kali GNU/Linux"
+version_ID="2023.3"
+version="2023.3"
+version_CODENAME=kali-rolling
+ID=kali
+ID_LIKE=debian
+

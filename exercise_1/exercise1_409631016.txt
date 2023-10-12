@@ -1,0 +1,15 @@
+mkdir exercise\ 1
+cd exercise\ 1/
+cp /etc/os-release ~/exercise\ 1/
+vim os-release
+:set nu
+第一個字是L
+第3列
+:2,9s/VERSION/version/gc  最後改了3個
+按u
+移動到第2列後 ctrl+v 按 j 向下選取到第7列，按y複製G移動到最後一列的結尾按p貼上
+:2,5s/"//g
+:w os-release.bak
+第一個字元是"
+gg移動到第1列，大寫O在原本的第一列上新增一列，然後輸入學號
+:wq
