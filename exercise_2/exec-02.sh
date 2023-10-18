@@ -1,17 +1,19 @@
 #!/bin/bash
 
 echo "Please select a format of date:"
-select format in Canada Denmark Finland French Germany Italy UnitedStates
+PS3="Which one do you want? >> "
+
+select format in Canada Denmark Finland French Germany Italy "United States"
 do
 	case $format in
-		Canada) date '+%2d/%2m/%2Y';;
-		Denmark) date '+%Y-%2m-%2d';;
-		Finland) date '+%2d-%2m-%Y';;
-		French) date '+%2d/%2m/%Y';;
-		Germany) date '+%Y-%2m-%2d';;
-		Italy) date '+%2d/%2m/%2Y';;
-		UnitedStates) date '+%2m-%2d-%2Y';;
+		Canada) date '+%d/%m/%y';;
+		Denmark) date '+%Y-%d-%m';;
+		Finland) date '+%d.%m.%Y';;
+		French) date '+%d/%m/%Y';;
+		Germany) date '+%Y-%m-%d';;
+		Italy) date '+%d/%m/%y';;
+		"United States") date '+%d-%m-%y';;
 		*) echo "You press the wrong key!"
-			exit;;
+		       exit;;
 	esac
-done
+done	
