@@ -8,7 +8,7 @@ read w
 
 h_m=$(echo "scale=2; $h/100" | bc)
 
-bmi=$(echo "scale=2; $w/($h_m*$h_m)" | bc)
+bmi=$(echo "scale=2; $w/($h_m^2)" | bc)
 
 echo "-----------Result-------------"
 echo "Your BMI is $bmi"
